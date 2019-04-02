@@ -15,6 +15,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        setSize(380, 522);
     }
 
     /**
@@ -31,11 +32,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLFundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 153, 255));
         jLabel1.setText("Bibliteca Pessoal");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(110, 10, 200, 34);
 
         jButton1.setText("Manutenção de País");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -43,6 +50,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(160, 100, 129, 23);
 
         jButton2.setText("Manutenção de Autor");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -50,6 +59,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(10, 60, 137, 23);
 
         jButton3.setText("Manutenção de Livro");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -57,6 +68,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(10, 100, 133, 23);
 
         jButton4.setText("Manutenção de Editora");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -64,36 +77,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(160, 60, 150, 23);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel1))
-                .addContainerGap(173, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addContainerGap(139, Short.MAX_VALUE))
-        );
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 40, 14);
+
+        jLFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bibliotecapessoal/netbeans.jpg"))); // NOI18N
+        getContentPane().add(jLFundo);
+        jLFundo.setBounds(0, 0, 320, 160);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -158,6 +151,8 @@ janela.setVisible(true);        // TODO add your handling code here:
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLFundo;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
